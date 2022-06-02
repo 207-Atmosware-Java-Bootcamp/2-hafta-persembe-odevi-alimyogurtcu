@@ -10,31 +10,28 @@ var numberCount = 0,
 
 function sumAndOddEvenCount(number) {
   for (let i = 2; i < number; i++) {
-    switch (i == 7) {
-      case true:
-        continue;
-      case false:
-        if (numberCount % 2 == 0) {
-          evenCount++;
-        } else {
-            oddCount++;
-        }
-        sum += i;
-        numberCount++;
+    if (i % 2 == 0) {
+      evenCount++;
+      sum += i;
+      numberCount++;
+    } else if (i % 2 != 0 && i != 7) {
+      oddCount++;
+      sum += i;
+      numberCount++;
     }
   }
 }
 
-function oddAndEvenNumbers (number) {
-    for(let i = 2; i < number; i++){
-        if(i%2 == 0) {
-            evenNumbers += (i + " ")
-            sumEven += i;
-        } else if (i%2 != 0 && i != 7) {
-            oddNumbers += (i + " ")
-            sumOdd += i
-        }
+function oddAndEvenNumbers(number) {
+  for (let i = 2; i < number; i++) {
+    if (i % 2 == 0) {
+      evenNumbers += i + " ";
+      sumEven += i;
+    } else if (i % 2 != 0 && i != 7) {
+      oddNumbers += i + " ";
+      sumOdd += i;
     }
+  }
 }
 
 do {
@@ -53,68 +50,64 @@ do {
 if (number == 44) {
   console.log("Secret-Key");
 } else {
-    sumAndOddEvenCount(number);
-    oddAndEvenNumbers(number)
+  sumAndOddEvenCount(number);
+  oddAndEvenNumbers(number);
 }
 
+document.write("Verilen sayı ", number, "<br>");
 document.write(
-    "Verilen sayı ",
-    number,
-    "<br>"
-  );
+  "1 ile ",
+  number,
+  " arasında ",
+  numberCount,
+  " sayı vardır.<br>"
+);
 document.write(
-    "1 ile ",
-    number,
-    " arasında ",
-    numberCount,
-    " sayı vardır.<br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki sayıların toplamı ",
-    sum,
-    "<br><br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki tek sayı sayısı ",
-    oddCount,
-    "<br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki tek sayılar ",
-    oddNumbers,
-    "<br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki tek sayılar toplamı ",
-    sumOdd,
-    "<br><br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki çift sayı sayısı ",
-    evenCount,
-    "<br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki çift sayılar ",
-    evenNumbers,
-    "<br>"
-  );
-  document.write(
-    "1 ile ",
-    number,
-    " arasındaki çift sayılar toplamı ",
-    sumEven,
-    "<br>"
-  );
+  "1 ile ",
+  number,
+  " arasındaki sayıların toplamı ",
+  sum,
+  "<br><br>"
+);
+document.write(
+  "1 ile ",
+  number,
+  " arasındaki tek sayı sayısı ",
+  oddCount,
+  "<br>"
+);
+document.write(
+  "1 ile ",
+  number,
+  " arasındaki tek sayılar ",
+  oddNumbers,
+  "<br>"
+);
+document.write(
+  "1 ile ",
+  number,
+  " arasındaki tek sayılar toplamı ",
+  sumOdd,
+  "<br><br>"
+);
+document.write(
+  "1 ile ",
+  number,
+  " arasındaki çift sayı sayısı ",
+  evenCount,
+  "<br>"
+);
+document.write(
+  "1 ile ",
+  number,
+  " arasındaki çift sayılar ",
+  evenNumbers,
+  "<br>"
+);
+document.write(
+  "1 ile ",
+  number,
+  " arasındaki çift sayılar toplamı ",
+  sumEven,
+  "<br>"
+);
