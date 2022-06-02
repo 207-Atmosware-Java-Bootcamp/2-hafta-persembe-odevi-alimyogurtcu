@@ -52,62 +52,62 @@ if (number == 44) {
 } else {
   sumAndOddEvenCount(number);
   oddAndEvenNumbers(number);
-}
 
-document.write("Verilen sayı ", number, "<br>");
-document.write(
-  "1 ile ",
-  number,
-  " arasında ",
-  numberCount,
-  " sayı vardır.<br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki sayıların toplamı ",
-  sum,
-  "<br><br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki tek sayı sayısı ",
-  oddCount,
-  "<br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki tek sayılar ",
-  oddNumbers,
-  "<br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki tek sayılar toplamı ",
-  sumOdd,
-  "<br><br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki çift sayı sayısı ",
-  evenCount,
-  "<br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki çift sayılar ",
-  evenNumbers,
-  "<br>"
-);
-document.write(
-  "1 ile ",
-  number,
-  " arasındaki çift sayılar toplamı ",
-  sumEven,
-  "<br>"
-);
+  document.write("Verilen sayı ", number, "<br>");
+  document.write(
+    "1 ile ",
+    number,
+    " arasında ",
+    numberCount,
+    " sayı vardır.<br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki sayıların toplamı ",
+    sum,
+    "<br><br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki tek sayı sayısı ",
+    oddCount,
+    "<br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki tek sayılar ",
+    oddNumbers,
+    "<br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki tek sayılar toplamı ",
+    sumOdd,
+    "<br><br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki çift sayı sayısı ",
+    evenCount,
+    "<br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki çift sayılar ",
+    evenNumbers,
+    "<br>"
+  );
+  document.write(
+    "1 ile ",
+    number,
+    " arasındaki çift sayılar toplamı ",
+    sumEven,
+    "<br>"
+  );
+}
